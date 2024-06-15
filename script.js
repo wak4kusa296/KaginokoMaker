@@ -32,4 +32,14 @@ document.addEventListener('DOMContentLoaded', function () {
             link.click();
         });
     });
+
+    // 横スクロールが縦にふわふわ動くのを防ぐ
+    const contentsBox = document.querySelector('.contents-box');
+
+    contentsBox.addEventListener('wheel', function (event) {
+        if (event.deltaY !== 0) {
+            event.preventDefault();
+            contentsBox.scrollLeft += event.deltaY;
+        }
+    });
 });
