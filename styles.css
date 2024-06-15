@@ -58,7 +58,6 @@ h3 {
 .contents-box {
     display: flex;
     overflow-x: auto;
-    overflow-y: hidden; /* 縦方向のスクロールを隠す */
     gap: 12px;
     height: auto;
     width: 100%; /* 親要素の内側いっぱいに広がる */
