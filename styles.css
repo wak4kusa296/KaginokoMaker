@@ -60,16 +60,17 @@ h3 {
 .contents-box {
     display: flex;
     overflow-x: auto;
+    overflow-y: hidden; /* 縦方向のスクロールを隠す */
     gap: 12px;
     height: auto;
-    width: 90vw; /* 親要素の内側いっぱいに広がる */
+    width: 100%; /* 親要素の内側いっぱいに広がる */
     background: #2e251e;
     border-radius: 48px;
     border: solid 6px #2e251e;
     padding: 12px;
-    margin: 0;
     box-sizing: border-box; /* パディングやボーダーの影響を受ける */
 }
+
 
 .canvas-box {
     display: flex;
