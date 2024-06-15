@@ -20,7 +20,7 @@ h3 {
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    box-sizing: border-box;
+    box-sizing: border-box; /* 追加 */
 }
 
 .img-box {
@@ -68,6 +68,14 @@ h3 {
     box-sizing: border-box; /* パディングやボーダーの影響を受ける */
 }
 
+.canvas-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+}
+
 .label-box {
     height: auto;
     width: auto;
@@ -112,7 +120,7 @@ input[type="radio"]:checked + label .img-box {
     transform: scale(1.05);
 }
 
-.button {
+button {
     display: inline-block;
     padding: 12px 24px;
     font-size: 16px;
@@ -126,7 +134,7 @@ input[type="radio"]:checked + label .img-box {
     cursor: pointer;
 }
 
-.button:hover {
+button:hover {
     transform: scale(1.1);
     color: #000;
     background-color: #FFF;
