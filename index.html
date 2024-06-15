@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アイコンメーカー</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <section class="base">
+
+        <section class="left">
+            <h3>からだのいろ</h3>
+            <section class="contents-box">
+                <div class="label-wrapper">
+                    <input type="radio" id="color-01" name="color" data-img="image/color/00.PNG" checked>
+                    <label class="label-box" for="color-01">
+                        <section class="img-box">
+                            <img class="img-img" src="image/color/00.PNG" alt="0">
+                            <img class="img-img back" src="image/Base.PNG" alt="0">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="color-02" name="color" data-img="image/color/01.PNG">
+                    <label class="label-box" for="color-02">
+                        <section class="img-box">
+                            <img class="img-img" src="image/color/01.PNG" alt="0">
+                            <img class="img-img back" src="image/Base.PNG" alt="0">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="color-03" name="color" data-img="image/color/02.PNG">
+                    <label class="label-box" for="color-03">
+                        <section class="img-box">
+                            <img class="img-img" src="image/color/02.PNG" alt="0">
+                            <img class="img-img back" src="image/Base.PNG" alt="0">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="color-04" name="color" data-img="image/color/03.PNG">
+                    <label class="label-box" for="color-04">
+                        <section class="img-box">
+                            <img class="img-img" src="image/color/03.PNG" alt="0">
+                            <img class="img-img back" src="image/Base.PNG" alt="0">
+                        </section>
+                    </label>
+                </div>
+            </section>
+        </section>
+
+        <section class="left">
+            <h3>おめめ</h3>
+            <section class="contents-box">
+                <div class="label-wrapper">
+                    <input type="radio" id="eye-00" name="eye" data-img="image/eye/00.PNG" checked>
+                    <label class="label-box" for="eye-00">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/eye/00.PNG" alt="eye">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="eye-01" name="eye" data-img="image/eye/01.PNG">
+                    <label class="label-box" for="eye-01">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/eye/01.PNG" alt="eye">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="eye-02" name="eye" data-img="image/eye/02.PNG">
+                    <label class="label-box" for="eye-02">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/eye/02.PNG" alt="eye">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="eye-03" name="eye" data-img="image/eye/03.PNG">
+                    <label class="label-box" for="eye-03">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/eye/03.PNG" alt="eye">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="eye-04" name="eye" data-img="image/eye/04.PNG">
+                    <label class="label-box" for="eye-04">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/eye/04.PNG" alt="eye">
+                        </section>
+                    </label>
+                </div>
+            </section>
+        </section>
+
+        <section class="left">
+            <h3>おてて</h3>
+            <section class="contents-box">
+                <div class="label-wrapper">
+                    <input type="radio" id="hand-01" name="hand" data-img="image/hand/00.PNG" checked>
+                    <label class="label-box" for="hand-01">
+                        <section class="img-box">                            
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/hand/00.PNG" alt="hand">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="hand-02" name="hand" data-img="image/hand/01.PNG">
+                    <label class="label-box" for="hand-02">
+                        <section class="img-box">                            
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/hand/01.PNG" alt="hand">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="hand-03" name="hand" data-img="image/hand/02.PNG">
+                    <label class="label-box" for="hand-03">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/hand/02.PNG" alt="hand">
+                        </section>
+                    </label>
+                </div>
+            </section>
+        </section>
+
+        <section class="left">
+            <h3>かみのけ</h3>
+            <section class="contents-box">
+                <div class="label-wrapper">
+                    <input type="radio" id="hair-00" name="hair" data-img="image/hair/00.PNG" checked>
+                    <label class="label-box" for="hair-00">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/hair/00.PNG" alt="cloth">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="hair-01" name="hair" data-img="image/hair/01.PNG">
+                    <label class="label-box" for="hair-01">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/hair/01.PNG" alt="hair">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="hair-02" name="hair" data-img="image/hair/02.PNG">
+                    <label class="label-box" for="hair-02">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/hair/02.PNG" alt="hair">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="hair-03" name="hair" data-img="image/hair/03.PNG">
+                    <label class="label-box" for="hair-03">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/hair/03.PNG" alt="hair">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="hair-04" name="hair" data-img="image/hair/04.PNG">
+                    <label class="label-box" for="hair-04">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/hair/04.PNG" alt="hair">
+                        </section>
+                    </label>
+                </div>
+            </section>
+        </section>
+
+        <section class="left">
+            <h3>ふく</h3>
+            <section class="contents-box">
+                <div class="label-wrapper">
+                    <input type="radio" id="cloth-00" name="cloth" data-img="image/cloth/00.PNG" checked>
+                    <label class="label-box" for="cloth-00">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/cloth/00.PNG" alt="cloth">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="cloth-01" name="cloth" data-img="image/cloth/01.PNG">
+                    <label class="label-box" for="cloth-01">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/cloth/01.PNG" alt="cloth">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="cloth-02" name="cloth" data-img="image/cloth/02.PNG">
+                    <label class="label-box" for="cloth-02">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/cloth/02.PNG" alt="cloth">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="cloth-03" name="cloth" data-img="image/cloth/03.PNG">
+                    <label class="label-box" for="cloth-03">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/cloth/03.PNG" alt="cloth">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="cloth-04" name="cloth" data-img="image/cloth/04.PNG">
+                    <label class="label-box" for="cloth-04">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/cloth/04.PNG" alt="cloth">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="cloth-05" name="cloth" data-img="image/cloth/05.PNG">
+                    <label class="label-box" for="cloth-05">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/cloth/05.PNG" alt="cloth">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="cloth-06" name="cloth" data-img="image/cloth/06.PNG">
+                    <label class="label-box" for="cloth-06">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/cloth/06.PNG" alt="cloth">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="cloth-07" name="cloth" data-img="image/cloth/07.PNG">
+                    <label class="label-box" for="cloth-07">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/cloth/07.PNG" alt="cloth">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="cloth-08" name="cloth" data-img="image/cloth/08.PNG">
+                    <label class="label-box" for="cloth-08">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/cloth/08.PNG" alt="cloth">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="cloth-09" name="cloth" data-img="image/cloth/09.PNG">
+                    <label class="label-box" for="cloth-09">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/cloth/09.PNG" alt="cloth">
+                        </section>
+                    </label>
+                </div>
+            </section>
+        </section>
+
+        <section class="left">
+            <h3>アクセサリー・あたま</h3>
+            <section class="contents-box">
+                <!-- 以下、18種類のヘッドパーツのラジオボタンを追加 -->
+                <div class="label-wrapper">
+                    <input type="radio" id="head-18" name="head" data-img="image/head/00.PNG" checked>
+                    <label class="label-box" for="head-18">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/head/00.PNG" alt="head">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="head-01" name="head" data-img="image/head/01.PNG">
+                    <label class="label-box" for="head-01">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/head/01.PNG" alt="head">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="head-02" name="head" data-img="image/head/02.PNG">
+                    <label class="label-box" for="head-02">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/head/02.PNG" alt="head">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="head-03" name="head" data-img="image/head/03.PNG">
+                    <label class="label-box" for="head-03">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/head/03.PNG" alt="head">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="head-04" name="head" data-img="image/head/04.PNG">
+                    <label class="label-box" for="head-04">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/head/04.PNG" alt="head">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="head-05" name="head" data-img="image/head/05.PNG">
+                    <label class="label-box" for="head-05">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/head/05.PNG" alt="head">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="head-06" name="head" data-img="image/head/06.PNG">
+                    <label class="label-box" for="head-06">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/head/06.PNG" alt="head">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="head-07" name="head" data-img="image/head/07.PNG">
+                    <label class="label-box" for="head-07">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/head/07.PNG" alt="head">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="head-08" name="head" data-img="image/head/08.PNG">
+                    <label class="label-box" for="head-08">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/head/08.PNG" alt="head">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="head-09" name="head" data-img="image/head/09.PNG">
+                    <label class="label-box" for="head-09">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/head/09.PNG" alt="head">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="head-10" name="head" data-img="image/head/10.PNG">
+                    <label class="label-box" for="head-10">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/head/10.PNG" alt="head">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="head-11" name="head" data-img="image/head/11.PNG">
+                    <label class="label-box" for="head-11">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/head/11.PNG" alt="head">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="head-12" name="head" data-img="image/head/12.PNG">
+                    <label class="label-box" for="head-12">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/head/12.PNG" alt="head">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="head-13" name="head" data-img="image/head/13.PNG">
+                    <label class="label-box" for="head-13">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/head/13.PNG" alt="head">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="head-14" name="head" data-img="image/head/14.PNG">
+                    <label class="label-box" for="head-14">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/head/14.PNG" alt="head">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="head-15" name="head" data-img="image/head/15.PNG">
+                    <label class="label-box" for="head-15">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/head/15.PNG" alt="head">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="head-16" name="head" data-img="image/head/16.PNG">
+                    <label class="label-box" for="head-16">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/head/16.PNG" alt="head">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="head-17" name="head" data-img="image/head/17.PNG">
+                    <label class="label-box" for="head-17">
+                        <section class="img-box">
+                            <img class="img-img" class="front" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/head/17.PNG" alt="head">
+                        </section>
+                    </label>
+                </div>
+            </section>
+        </section>
+
+        <section class="left">
+            <h3>アクセサリー・背中</h3>
+            <section class="contents-box">
+                <div class="label-wrapper">
+                    <input type="radio" id="back-05" name="back" data-img="image/back/00.PNG" checked>
+                    <label class="label-box" for="back-05">
+                        <section class="img-box">
+                            <img class="img-img" class="back" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/back/00.PNG" alt="back">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="back-01" name="back" data-img="image/back/01.PNG">
+                    <label class="label-box" for="back-01">
+                        <section class="img-box">
+                            <img class="img-img" class="back" src="image/Back.PNG" alt="0">
+                            <img class="img-img" src="image/back/01.PNG" alt="back">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="back-02" name="back" data-img="image/back/02.PNG">
+                    <label class="label-box" for="back-02">
+                        <section class="img-box">
+                            <img class="img-img" src="image/back/02.PNG" alt="back">
+                            <img class="img-img" class="back" src="image/Back.PNG" alt="0">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="back-03" name="back" data-img="image/back/03.PNG">
+                    <label class="label-box" for="back-03">
+                        <section class="img-box">
+                            <img class="img-img" src="image/back/03.PNG" alt="back">
+                            <img class="img-img" class="back" src="image/Back.PNG" alt="0">
+                        </section>
+                    </label>
+                </div>
+                <div class="label-wrapper">
+                    <input type="radio" id="back-04" name="back" data-img="image/back/04.PNG">
+                    <label class="label-box" for="back-04">
+                        <section class="img-box">
+                            <img class="img-img" src="image/back/04.PNG" alt="back">
+                            <img class="img-img" class="back" src="image/Back.PNG" alt="0">
+                        </section>
+                    </label>
+                </div>
+                
+            </section>
+        </section>
+        
+    </section>
+
+       <!-- キャンバスエリア -->
+       <section class="canvas-box">
+        <div class="box" id="canvas-box">
+            <img class="canvas-img" class="04" id="canvas-base" src="image/White.PNG" alt="base">
+            <img class="canvas-img" class="01" id="canvas-back" src="" alt="back">
+            <img class="canvas-img" class="03" id="canvas-color" src="image/color/00.PNG" alt="color">
+            <img class="canvas-img" class="04" id="canvas-base" src="image/Base.PNG" alt="base">
+            <img class="canvas-img" class="02" id="canvas-cloth" src="" alt="cloth">
+            <img class="canvas-img" class="05" id="canvas-hand" src="" alt="hand">
+            <img class="canvas-img" class="06" id="canvas-eye" src="" alt="eye">
+            <img class="canvas-img" class="07" id="canvas-hair" src="" alt="hair">
+            <img class="canvas-img" class="08" id="canvas-head" src="" alt="head">
+        </div>
+    </section>
+    <button id="download-btn">ダウンロード</button>
+</section>
+
+    <script src="script.js"></script>
+</body>
+</html>
